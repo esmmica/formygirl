@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg1.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: #d8957bfd; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.title {
+    background-image: linear-gradient(to right, #9e2d2d, #381717);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-side {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-side .image-content img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.messages .message {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    font-weight: bold; 
+    font-size: 20px; 
+}
+
+.left-side .messages {
+    margin-top: 20px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    position: relative; /* Add this to establish a positioning context */
+}
+
+.right-side .month-links-box {
+    border: 1px solid #000000bd;
+    padding: 20px;
+    background-color: #7a2222;
+    min-height: 90vh;
+}
+
+.right-side .month-links-box h2 {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fafdff;
+    font-size: 40px;
+}
+
+.right-side .month-links ul {
+    list-style: none;
+    columns: 3;
+    text-align: center;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.right-side .month-links ul li {
+    margin-bottom: 10px;
+}
+
+.right-side .month-links ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+
+.right-side .month-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.gift-icon {
+    text-align: center;
+    padding: 10px 0;
+    position: absolute; /* Set the position to absolute */
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 50%; /* Position it horizontally in the middle */
+    transform: translateX(-50%); /* Center it horizontally */
+    z-index: 2; /* Set a higher z-index to ensure it's above other content */
+}
+
+.gift-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.next-button {
+    background-color: #7a2222; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+.next-button:hover {
+    background-color: #e74242;
+}
+
+.letter-container {
+    border: 1px solid #000000bd;
+    background-color: #7a2222;
+    margin-top: 20px; 
+    padding: 55px 20px;
+    display: none;
+    position: relative; 
+    max-height: calc(100vh - 200px); 
+    overflow-y: auto; 
+}
+
+.letter-container iframe {
+    border: none;
+    width: 100%;
+}
