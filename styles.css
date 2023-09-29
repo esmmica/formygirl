@@ -15,10 +15,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  
-    .letter-container {
-        padding: 20px; 
+
+    body {
+        font-size: 14px;
     }
+
+    .container {
+        padding: 10px;
+
+    }
+
 }
 
 .title {
